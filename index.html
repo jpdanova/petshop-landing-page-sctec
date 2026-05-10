@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blippi.Pet - Cuidando do seu pet com carinho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container cabecalho">
+            <div class="logotipo">Blippi<span class="amarelo">.pet</span></div>
+
+            <nav class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Seção de destaque (Hero) -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero_conteudo">
+                    <h1>
+                        Cuidando do seu pet <br />
+                        com <span class="amarelo">carinho e qualidade</span>
+                    </h1>
+                    <p>Banho, tosa e produtos selecionados para garantir a saúde e felicidade do seu melhor amigo.</p>
+                    <div class="hero_acoes">
+                        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+                            Agendar Atendimento
+                        </button>
+                        <a href="#servicos">Conheça nossos serviços.</a>
+                    </div>
+                </div>
+
+                <div class="hero_imagem">
+                    <img src="./yorkshire.png" alt="Cachorro da raça Yorkshire" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="sobre" id="sobre">
+            <div class="container">
+                <h2>Sobre a Blippi<span class="amarelo">.Pet</span></h2>
+
+                <div class="sobre_info">
+                    <div class="sobre_conteudo">
+                        <p>Na Blippi Pet, acreditamos que cada animal merece cuidado, carinho e atenção especial.</p>
+                        <p>Nossa missão é oferecer serviços de qualidade, com profissionais dedicados e um ambiente seguro, garantindo o bem-estar e a felicidade do seu pet.</p>
+                        <p>Trabalhamos com produtos selecionados e técnicas adequadas para cada tipo de pelagem, sempre respeitando o conforto de cada animal. Aqui, seu pet é tratado como parte da família.</p>
+
+                        <div class="sobre_indicadores">
+                            <div class="sobre_indicador_item">
+                                <strong><span class="amarelo">+</span>200</strong>
+                                <span>Pets Atendidos</span>
+                            </div>
+                            <div class="sobre_indicador_item">
+                                <strong><span class="amarelo">+</span>2</strong>
+                                <span>Anos de Experiência</span>
+                            </div>
+                            <div class="sobre_indicador_item">
+                                <strong>100<span class="amarelo">%</span></strong>
+                                <span>Amor aos Animais</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sobre_imagem">
+                        <img src="./yorkshire.png" alt="Cachorro Yorkshire" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section class="servicos" id="servicos">
+            <div class="container">
+                <h2>Nossos <span class="amarelo">Serviços</span></h2>
+                <p class="servicos_subtitulo">Tudo o que seu pet precisa em um só lugar</p>
+
+                <div class="servicos_grid">
+                    <div class="servico_card">
+                        <div class="servico_icone">🛁</div>
+                        <h3>Banho</h3>
+                        <p>Banho completo com produtos de qualidade, secagem e perfume especial para o seu pet.</p>
+                        <p class="preco">A partir de R$ 50</p>
+                    </div>
+                    <div class="servico_card">
+                        <div class="servico_icone">✂️</div>
+                        <h3>Tosa</h3>
+                        <p>Tosa higiênica ou completa, realizada por profissionais com experiência em diversas raças.</p>
+                        <p class="preco">A partir de R$ 70</p>
+                    </div>
+                    <div class="servico_card">
+                        <div class="servico_icone">💧</div>
+                        <h3>Hidratação</h3>
+                        <p>Tratamento especial para a pelagem do seu pet, deixando o pelo macio e com brilho.</p>
+                        <p class="preco">A partir de R$ 40</p>
+                    </div>
+                    <div class="servico_card">
+                        <div class="servico_icone">🦷</div>
+                        <h3>Limpeza Dental</h3>
+                        <p>Higiene bucal com produtos seguros para manter a saúde do seu pet em dia.</p>
+                        <p class="preco">A partir de R$ 35</p>
+                    </div>
+                    <div class="servico_card">
+                        <div class="servico_icone">🐾</div>
+                        <h3>Pacote Completo</h3>
+                        <p>Banho + Tosa + Hidratação + Limpeza das orelhas + Corte de unhas com desconto especial.</p>
+                        <p class="preco">A partir de R$ 130</p>
+                    </div>
+                    <div class="servico_card">
+                        <div class="servico_icone">🏠</div>
+                        <h3>Hotel Pet</h3>
+                        <p>Hospedagem segura e confortável para o seu pet enquanto você viaja.</p>
+                        <p class="preco">A partir de R$ 80 / diária</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section class="contato" id="contato">
+            <div class="container">
+                <h2>Entre em <span class="amarelo">Contato</span></h2>
+                <p class="contato_subtitulo">Agende um horário ou tire suas dúvidas. Estamos prontos para te atender!</p>
+
+                <div class="contato_inner">
+                    <div class="contato_info">
+                        <div class="contato_item">
+                            <span class="contato_icone">📍</span>
+                            <div>
+                                <strong>Endereço</strong>
+                                <p>Rua das Flores, 123 – Centro, Campinas/SC</p>
+                            </div>
+                        </div>
+                        <div class="contato_item">
+                            <span class="contato_icone">📞</span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p>(19) 99999-9999</p>
+                            </div>
+                        </div>
+                        <div class="contato_item">
+                            <span class="contato_icone">🕐</span>
+                            <div>
+                                <strong>Horário</strong>
+                                <p>Segunda a Sábado: 8h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de agendamento -->
+                    <form id="formContato">
+                        <div class="form_grupo">
+                            <label for="nome">Seu nome *</label>
+                            <input type="text" id="nome" placeholder="Ex: Maria Silva" />
+                            <span class="erro" id="erro_nome"></span>
+                        </div>
+                        <div class="form_grupo">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" placeholder="seuemail@exemplo.com" />
+                            <span class="erro" id="erro_email"></span>
+                        </div>
+                        <div class="form_grupo">
+                            <label for="telefone">WhatsApp *</label>
+                            <input type="tel" id="telefone" placeholder="(00) 00000-0000" />
+                            <span class="erro" id="erro_telefone"></span>
+                        </div>
+                        <div class="form_grupo">
+                            <label for="pet">Nome do pet *</label>
+                            <input type="text" id="pet" placeholder="Ex: Totó" />
+                            <span class="erro" id="erro_pet"></span>
+                        </div>
+                        <div class="form_grupo">
+                            <label for="servico">Serviço desejado *</label>
+                            <select id="servico">
+                                <option value="">Selecione um serviço...</option>
+                                <option value="banho">Banho</option>
+                                <option value="tosa">Tosa</option>
+                                <option value="hidratacao">Hidratação</option>
+                                <option value="dental">Limpeza Dental</option>
+                                <option value="pacote">Pacote Completo</option>
+                                <option value="hotel">Hotel Pet</option>
+                            </select>
+                            <span class="erro" id="erro_servico"></span>
+                        </div>
+                        <div class="form_grupo">
+                            <label for="obs">Observações</label>
+                            <textarea id="obs" placeholder="Raça, tamanho, comportamento do pet..."></textarea>
+                        </div>
+                        <p id="msg_sucesso" style="display: none; color: green; font-weight: bold;">
+                            🐾 Solicitação enviada! Entraremos em contato em breve.
+                        </p>
+                        <button type="button" onclick="enviarFormulario()">Enviar Solicitação</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p class="footer_logo">Blippi<span class="amarelo">.pet</span></p>
+            <p>Cuidando do seu pet com amor e carinho.</p>
+            <p class="footer_copy">© 2025 Blippi.Pet — Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

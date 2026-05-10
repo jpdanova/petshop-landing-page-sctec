@@ -1,0 +1,502 @@
+/* ==========================================
+   BLIPPI.PET - styles.css
+   ========================================== */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+}
+
+h1 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 46px;
+}
+
+h2 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Classe utilitária para cor amarela */
+.amarelo {
+  color: #f4c542;
+}
+
+/* ==========================================
+   CABEÇALHO
+   ========================================== */
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.logotipo {
+  font-family: "Fredoka", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f5e4a;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #1f5e4a;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.menu a:hover {
+  color: #f4c542;
+}
+
+/* ==========================================
+   HERO / SEÇÃO DE DESTAQUE
+   ========================================== */
+
+.hero {
+  background-color: #1f5e4a;
+  margin: 12px 20px;
+  border-radius: 24px;
+  color: #ffffff;
+  padding: 60px 0;
+  /* position relative para que a imagem possa usar position absolute */
+  position: relative;
+  overflow: hidden;
+  min-height: 68vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.hero_conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero_conteudo p {
+  font-size: 15px;
+  opacity: 0.85;
+  max-width: 460px;
+  line-height: 1.7;
+}
+
+.hero_acoes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.hero_acoes button {
+  padding: 14px 26px;
+  background-color: #f4c542;
+  color: #1f5e4a;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero_acoes button:hover {
+  opacity: 0.9;
+}
+
+.hero_acoes a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero_acoes a:hover {
+  text-decoration: underline;
+}
+
+/* Imagem do hero com position absolute para sobrepor ao fundo */
+.hero_imagem {
+  position: relative;
+  align-self: flex-end;
+}
+
+.hero_imagem img {
+  width: 420px;
+  display: block;
+  /* position absolute para efeito de sobreposição */
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+}
+
+/* ==========================================
+   SEÇÃO SOBRE
+   ========================================== */
+
+.sobre {
+  padding: 80px 0;
+}
+
+/* Flexbox para organizar o conteúdo lado a lado */
+.sobre_info {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.sobre_conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sobre_conteudo p {
+  line-height: 1.8;
+  color: #555555;
+}
+
+/* Indicadores em flex */
+.sobre_indicadores {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.sobre_indicador_item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sobre_indicador_item strong {
+  font-family: "Fredoka", sans-serif;
+  font-size: 36px;
+  color: #1f5e4a;
+  line-height: 1;
+}
+
+.sobre_indicador_item span {
+  font-size: 13px;
+  color: #777777;
+}
+
+/* Imagem da seção sobre com fundo amarelo */
+.sobre_imagem {
+  flex-shrink: 0;
+  width: 320px;
+  background-color: #f4c542;
+  border-radius: 24px;
+  padding: 28px 28px 0 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sobre_imagem img {
+  width: 100%;
+  display: block;
+}
+
+/* ==========================================
+   SEÇÃO SERVIÇOS
+   ========================================== */
+
+.servicos {
+  background-color: #f8f8f6;
+  padding: 80px 0;
+}
+
+.servicos h2 {
+  text-align: center;
+}
+
+.servicos_subtitulo {
+  text-align: center;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+/* Grid para os cards de serviço */
+.servicos_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card com aspect-ratio para proporção uniforme */
+.servico_card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 2px solid transparent;
+  aspect-ratio: 4 / 3;
+}
+
+.servico_card:hover {
+  border-color: #f4c542;
+}
+
+.servico_icone {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.servico_card h3 {
+  color: #1f5e4a;
+}
+
+.servico_card p {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.preco {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #1f5e4a !important;
+  margin-top: auto;
+}
+
+/* ==========================================
+   SEÇÃO CONTATO
+   ========================================== */
+
+.contato {
+  padding: 80px 0;
+}
+
+.contato h2 {
+  text-align: center;
+}
+
+.contato_subtitulo {
+  text-align: center;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+/* Flexbox para organizar info e formulário lado a lado */
+.contato_inner {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.contato_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 8px;
+}
+
+.contato_item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.contato_icone {
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  background-color: #f4c542;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contato_item strong {
+  display: block;
+  font-size: 14px;
+  color: #1f5e4a;
+  margin-bottom: 2px;
+}
+
+.contato_item p {
+  font-size: 13px;
+  color: #666666;
+}
+
+/* Formulário */
+form {
+  flex: 1.2;
+  background-color: #f8f8f6;
+  border-radius: 20px;
+  padding: 36px;
+}
+
+.form_grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form_grupo label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f5e4a;
+}
+
+.form_grupo input,
+.form_grupo select,
+.form_grupo textarea {
+  padding: 11px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.form_grupo input:focus,
+.form_grupo select:focus,
+.form_grupo textarea:focus {
+  border-color: #1f5e4a;
+}
+
+.form_grupo textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* Mensagem de erro */
+.erro {
+  font-size: 12px;
+  color: red;
+  min-height: 16px;
+}
+
+form button {
+  width: 100%;
+  padding: 13px;
+  background-color: #1f5e4a;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+form button:hover {
+  background-color: #2a7a61;
+}
+
+/* ==========================================
+   RODAPÉ
+   ========================================== */
+
+footer {
+  background-color: #1f5e4a;
+  color: #ffffff;
+  text-align: center;
+  padding: 36px 24px;
+}
+
+.footer_logo {
+  font-family: "Fredoka", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.footer_copy {
+  margin-top: 16px;
+  font-size: 12px;
+  opacity: 0.55;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+   ========================================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+
+  .hero .container { flex-direction: column; align-items: center; text-align: center; }
+  .hero_conteudo { align-items: center; }
+  .hero_imagem img { position: relative; bottom: 0; width: 280px; }
+
+  .sobre_info { flex-direction: column; }
+  .sobre_imagem { width: 100%; max-width: 360px; }
+  .sobre_indicadores { justify-content: center; }
+
+  .servicos_grid { grid-template-columns: 1fr 1fr; }
+  .servico_card { aspect-ratio: auto; }
+
+  .contato_inner { flex-direction: column; }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .menu { display: none; }
+  .hero { margin: 8px 10px; min-height: auto; }
+  .hero_imagem { display: none; }
+  .servicos_grid { grid-template-columns: 1fr; }
+  form { padding: 24px 18px; }
+}
